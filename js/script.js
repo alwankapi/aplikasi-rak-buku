@@ -38,7 +38,7 @@ const addBook = () => {
     const id = generateId()
     const title = document.getElementById('title').value
     const author = document.getElementById('author').value
-    const year = document.getElementById('year').value
+    const year = parseInt(document.getElementById('year').value);
     const isComplete = document.getElementById('isComplete').checked
 
     books.push({
